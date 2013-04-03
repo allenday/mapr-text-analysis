@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.mapr.proserv</groupId>
+	<artifactId>textanalysis</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>textanalysis</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<repositories>
+		<repository>
+			<id>conjars.org</id>
+			<url>http://conjars.org/repo</url>
+		</repository>
+	</repositories>
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.mahout</groupId>
+			<artifactId>mahout-core</artifactId>
+			<version>0.7</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.mahout</groupId>
+			<artifactId>mahout-math</artifactId>
+			<version>0.7</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.mahout</groupId>
+			<artifactId>mahout-collections</artifactId>
+			<version>1.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.mahout</groupId>
+			<artifactId>mahout-utils</artifactId>
+			<version>0.5</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.mahout</groupId>
+			<artifactId>mahout-examples</artifactId>
+			<version>0.7</version>
+		</dependency>
+<!--
+		<dependency>
+			<groupId>org.apache.mahout</groupId>
+			<artifactId>mahout-taste-webapp</artifactId>
+			<version>0.5</version>
+		</dependency>
+-->
+		<dependency>
+			<groupId>org.apache.mahout</groupId>
+			<artifactId>mahout-integration</artifactId>
+			<version>0.7</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.mahout</groupId>
+			<artifactId>mahout-eclipse-support</artifactId>
+			<version>0.5</version>
+		</dependency>
+
+<dependency>
+	<groupId>org.apache.cassandra</groupId>
+	<artifactId>cassandra-thrift</artifactId>
+	<version>1.2.0</version>
+</dependency>
+            
+
+		<dependency>
+			<groupId>org.apache.pig</groupId>
+			<artifactId>pig</artifactId>
+			<version>0.8.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.pdfbox</groupId>
+			<artifactId>pdfbox</artifactId>
+			<version>1.7.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-scratchpad</artifactId>
+			<version>3.2-FINAL</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.tika</groupId>
+			<artifactId>tika-core</artifactId>
+			<version>0.7</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.tika</groupId>
+			<artifactId>tika-parsers</artifactId>
+			<version>0.7</version>
+		</dependency>
+
+		<dependency>
+			<groupId>cascading</groupId>
+			<artifactId>cascading-core</artifactId>
+			<version>2.1.5</version>
+		</dependency>
+
+		<dependency>
+			<groupId>cascading</groupId>
+			<artifactId>cascading-local</artifactId>
+			<version>2.1.5</version>
+		</dependency>
+
+		<dependency>
+			<groupId>cascading</groupId>
+			<artifactId>cascading-hadoop</artifactId>
+			<version>2.1.5</version>
+		</dependency>
+
+		<dependency>
+			<groupId>cascading</groupId>
+			<artifactId>cascading-xml</artifactId>
+			<version>2.1.5</version>
+		</dependency>
+
+		<dependency>
+			<groupId>cascading</groupId>
+			<artifactId>cascading-platform</artifactId>
+			<version>2.1.5</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+</project>
