@@ -17,6 +17,10 @@ http://www.eng.lsu.edu/mirrors/apache/pig/stable/pig-0.11.1.tar.gz
 follow the instructions for "Interactive Mode" to ensure it works
 http://pig.apache.org/docs/r0.11.1/start.html#interactive-mode
 
-3. mvn build to pull in all dependency jars.
+3. download and install Mahout 0.7:
+
+http://apache.mirrors.pair.com/mahout/0.7/mahout-distribution-0.7.tar.gz
+
+4. mvn build to pull in all dependency jars.
 
 mvn clean install
