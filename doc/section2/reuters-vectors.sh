@@ -24,3 +24,11 @@ mahout kmeans --help
 
 #Run the K-means algorithm.
 mahout kmeans -i ../../data/reuters-21578-vector/tfidf-vectors -c ../../data/reuters-21578-initial -o ../../data/reuters-21578-cluster -dm org.apache.mahout.common.distance.SquaredEuclideanDistanceMeasure -cd 1.0 -k 20 -x 20 -cl
+
+#See the results (cluster aggregate perspective)
+mahout clusterdump -d ../../data/reuters-21578-vector/dictionary.file-0 -dt sequencefile -i ../../data/reuters-21578-cluster/clusters-15-final/part-r-00000 -n 20 -b 100 -o cdump.txt -p ../../data/reuters-21578-cluster/clusteredPoints/
+
+less -S cdump.txt
+
+#See the results (document point perspective)
+mahout seqdumper -i ../../data/reuters-21578-cluster/clusteredPoints/part-m-00000 | less -S
