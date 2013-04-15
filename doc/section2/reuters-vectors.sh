@@ -25,6 +25,10 @@ mahout kmeans --help
 #Run the K-means algorithm.
 mahout kmeans -i ../../data/reuters-21578-vector/tfidf-vectors -c ../../data/reuters-21578-initial -o ../../data/reuters-21578-cluster -dm org.apache.mahout.common.distance.SquaredEuclideanDistanceMeasure -cd 1.0 -k 20 -x 20 -cl
 
+#XXX
+#Run the K-means algorithm again with the CosineDistanceMeasure
+#XXX
+
 #See the results (cluster aggregate perspective)
 mahout clusterdump -d ../../data/reuters-21578-vector/dictionary.file-0 -dt sequencefile -i ../../data/reuters-21578-cluster/clusters-15-final/part-r-00000 -n 20 -b 100 -o cdump.txt -p ../../data/reuters-21578-cluster/clusteredPoints/
 
@@ -35,3 +39,7 @@ mahout seqdumper -i ../../data/reuters-21578-cluster/clusteredPoints/part-m-0000
 
 #In eclipse, run InterClusterDistances (cannot use -Dexec:mainClass ?  Seems some path problem)
 mvn exec:java -Dexec.mainClass="com.mapr.proserv.textanalysis.InterClusterDistances" -Dexec.args="data/reuters-21578-cluster/clusters-15-final/part-r-00000" 
+
+#XXX
+#How do the Cosine and Euclidean DM clusterings compare?
+#XXX
