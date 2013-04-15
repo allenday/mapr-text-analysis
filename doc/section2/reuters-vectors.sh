@@ -37,6 +37,10 @@ less -S cdump.txt
 #See the results (document point perspective)
 mahout seqdumper -i ../../data/reuters-21578-cluster/clusteredPoints/part-m-00000 | less -S
 
+#XXX
+# BREAK
+#XXX
+
 #In eclipse, run InterClusterDistances (cannot use -Dexec:mainClass ?  Seems some path problem)
 mvn exec:java -Dexec.mainClass="com.mapr.proserv.textanalysis.InterClusterDistances" -Dexec.args="data/reuters-21578-cluster/clusters-15-final/part-r-00000" 
 
