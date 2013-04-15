@@ -47,13 +47,11 @@
 			<artifactId>mahout-collections</artifactId>
 			<version>1.0</version>
 		</dependency>
-
 		<dependency>
 			<groupId>org.apache.mahout</groupId>
 			<artifactId>mahout-utils</artifactId>
 			<version>0.5</version>
 		</dependency>
-
 		<dependency>
 			<groupId>org.apache.mahout</groupId>
 			<artifactId>mahout-examples</artifactId>
@@ -71,13 +69,11 @@
 			<artifactId>mahout-integration</artifactId>
 			<version>0.7</version>
 		</dependency>
-
 		<dependency>
 			<groupId>org.apache.mahout</groupId>
 			<artifactId>mahout-eclipse-support</artifactId>
 			<version>0.5</version>
 		</dependency>
-
 <dependency>
 	<groupId>org.apache.cassandra</groupId>
 	<artifactId>cassandra-thrift</artifactId>
@@ -145,5 +141,10 @@
 			<version>2.1.5</version>
 			<scope>test</scope>
 		</dependency>
+<dependency>
+	<groupId>org.slf4j</groupId>
+	<artifactId>slf4j-log4j12</artifactId>
+	<version>1.7.5</version>
+</dependency>
 	</dependencies>
 </project>
