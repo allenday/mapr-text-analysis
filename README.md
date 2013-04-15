@@ -24,3 +24,7 @@ http://apache.mirrors.pair.com/mahout/0.7/mahout-distribution-0.7.tar.gz
 4. mvn build to pull in all dependency jars.
 
 mvn clean install
+
+5. Git clone Ted Dunning's MiA (Mahout in Action) code examples.  This may be useful later.
+
+git clone git@github.com:tdunning/MiA.git
