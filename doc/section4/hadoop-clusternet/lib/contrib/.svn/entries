@@ -1,67 +1,0 @@
-10
-
-dir
-49
-http://hadoop-clusternet.googlecode.com/svn/trunk/lib/contrib
-http://hadoop-clusternet.googlecode.com/svn
-
-
-
-2010-10-20T02:04:17.965046Z
-5
-marcellodesales
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-e50cdf67-fb17-008b-0da4-94f41899ae6d
-
-fairscheduler
-dir
-
-sqoop
-dir
-
-scribe-log4j
-dir
-
-failmon
-dir
-
-hdfsproxy
-dir
-
-index
-dir
-
-thriftfs
-dir
-
-datajoin
-dir
-
-capacity-scheduler
-dir
-
-streaming
-dir
-
-hod
-dir
-
-vaidya
-dir
-
-mrunit
-dir
-
