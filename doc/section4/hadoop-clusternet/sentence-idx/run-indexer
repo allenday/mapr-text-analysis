@@ -1,0 +1,34 @@
+#!/bin/bash
+#
+# Runs the sentence indexer on a dataset
+
+set -e
+
+bin=`dirname $0`
+bin=`cd $bin && pwd`
+
+dataset=$1
+output=$2
+
+if [ -z "$dataset" ]; then
+  echo "Usage: $0 (dataset-path)"
+  echo "e.g., $0 bible"
+  echo "Will output results to bible_idx"
+fi
+
+if [ -z "$output" ]; then
+  # User didn't specify the output directory - set it automatically.
+  output="${dataset}_idx"
+fi
+
+# Run the streaming job
+hadoop jar /usr/lib/hadoop/contrib/streaming/hadoop-*-streaming.jar -input "$dataset" \
+    -output "$output" -mapper mapper.py -reducer cat -file "$bin/mapper.py"
+
+# Remove the output dir's logs subdir; it just gets in the way.
+hadoop fs -rmr "$output/_logs"
+
+echo "Job complete"
+echo "Output stored in the '$output' directory"
+
+

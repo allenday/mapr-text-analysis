@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 25
+/svn/!svn/ver/5/trunk/lib
+END
+hadoop-0.20.1+133-mrunit.jar
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/4/trunk/lib/hadoop-0.20.1+133-mrunit.jar
+END
+hadoop-0.20.1+133-examples.jar
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/5/trunk/lib/hadoop-0.20.1+133-examples.jar
+END
+hadoop-0.20.1+133-test.jar
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/5/trunk/lib/hadoop-0.20.1+133-test.jar
+END
+hadoop-0.20.1+133-tools.jar
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/5/trunk/lib/hadoop-0.20.1+133-tools.jar
+END
+hadoop-0.20.1+133-ant.jar
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/5/trunk/lib/hadoop-0.20.1+133-ant.jar
+END
+hadoop-0.20.1+133-core.jar
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/5/trunk/lib/hadoop-0.20.1+133-core.jar
+END

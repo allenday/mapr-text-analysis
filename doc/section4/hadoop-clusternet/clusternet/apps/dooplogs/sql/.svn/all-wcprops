@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/24/trunk/clusternet/apps/dooplogs/sql
+END
+apachelog.sql
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/23/trunk/clusternet/apps/dooplogs/sql/apachelog.sql
+END
+loadFromHdfs.sql
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/24/trunk/clusternet/apps/dooplogs/sql/loadFromHdfs.sql
+END
+loadFromLocal.sql
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/23/trunk/clusternet/apps/dooplogs/sql/loadFromLocal.sql
+END

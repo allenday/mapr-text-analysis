@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<!-- Hive Configuration can either be stored in this file or in the hadoop configuration files  -->
+<!-- that are implied by Hadoop setup variables.                                                -->
+<!-- Aside from Hadoop setup variables - this file is provided as a convenience so that Hive    -->
+<!-- users do not have to edit hadoop configuration files (that may be managed as a centralized -->
+<!-- resource).                                                                                 -->
+
+<!-- Hive Execution Parameters -->
+
+<property>
+  <name>javax.jdo.option.ConnectionURL</name>
+  <value>jdbc:mysql://localhost:3306/hive?createDatabaseIfNotExist=true</value>
+</property>
+<property>
+  <name>javax.jdo.option.ConnectionDriverName</name>
+  <value>com.mysql.jdbc.Driver</value>
+</property>
+<property>
+  <name>javax.jdo.option.ConnectionUserName</name>
+  <value>hadoop</value>
+</property>
+<property>
+  <name>javax.jdo.option.ConnectionPassword</name>
+  <value>hadoop</value>
+</property>
+<property>
+  <name>mapred.reduce.tasks</name>
+  <value>10</value>
+</property>
+<property>
+  <name>hive.exec.reducers.max</name>
+  <value>10</value>
+</property>
+
+</configuration>
+

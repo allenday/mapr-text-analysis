@@ -1,0 +1,67 @@
+<!--
+
+  Buildfile for inverted index MapReduce exercise
+  (c) Copyright 2009 Cloudera, Inc.
+
+  Type 'ant' on the command line in this directory
+  to create the indexer.jar program to run with Hadoop.
+-->
+
+<project name="world" default="jar">
+  <property name="bindir"      value="${basedir}/bin" />
+  <property name="srcdir"      value="${basedir}/stub-src/src" />
+  <property name="testsrcdir"  value="${basedir}/test" />
+  <property name="jarname"     value="${basedir}/indexer.jar" />
+  <property name="hadoop-home" value="/usr/lib/hadoop" />
+  <property name="hadoop-libs" value="${hadoop-home}/lib" />
+  <property name="hadoop-contrib" value="${hadoop-home}/contrib" />
+
+  <target name="compile" description="Compile all Java sources">
+    <mkdir dir="${bindir}" />
+    <javac destdir="${bindir}">
+      <src path="${srcdir}" />
+      <src path="${testsrcdir}" />
+      <classpath>
+        <pathelement path="${mrunit-jar}" />
+        <fileset dir="${hadoop-libs}">
+          <include name="*.jar" />
+        </fileset>
+        <fileset dir="${hadoop-home}">
+          <include name="hadoop-*-core.jar" />
+        </fileset>
+        <fileset dir="${hadoop-contrib}/mrunit">
+          <include name="*.jar" />
+        </fileset>
+      </classpath>
+    </javac>
+  </target>
+
+  <target name="jar" depends="compile" description="Package the classes into a .jar file">
+    <jar destfile="${jarname}" basedir="${bindir}" />
+  </target>
+
+  <target name="clean" description="Remove all compilation products to ensure a clean build">
+    <delete dir="${bindir}" />
+    <delete file="${jarname}" />
+  </target>
+
+  <target name="test" description="Run JUnit tests" depends="compile">
+    <junit printsummary="withOutAndErr" fork="on" timeout="5000">
+      <formatter type="brief" usefile="false" />
+      <classpath>
+        <pathelement path="${bindir}" />
+        <fileset dir="${hadoop-libs}">
+          <include name="*.jar" />
+        </fileset>
+        <fileset dir="${hadoop-home}">
+          <include name="hadoop-*-core.jar" />
+        </fileset>
+        <fileset dir="${hadoop-contrib}/mrunit">
+          <include name="*.jar" />
+        </fileset>
+      </classpath>
+      <test name="index.AllTests" />
+    </junit>
+  </target>
+
+</project>

@@ -1,0 +1,98 @@
+<project name="ClusterNet" basedir="." default="setup-runtime">
+
+  <property name="CURRENT_HADOOP" value="hadoop-0.20.2+737" />
+  <property name="CURRENT_HIVE" value="hive-0.5.0+32" />
+  <property file="default.properties" />
+  
+  <target name="load-contrib">
+    <property name="ant-contrib.jar"
+              location="thirdparty/ant/ant-contrib-1.0b3.jar"/>
+
+    <taskdef resource="net/sf/antcontrib/antlib.xml"
+             classpath="${ant-contrib.jar}"/>
+  </target>
+
+  <target name="setup-runtime">
+    <delete dir="runtime/" />
+    <echo message="Extracting the current version of Hadoop ${CURRENT_HADOOP}" />
+    <exec dir="." executable="tar">
+	<arg line="-zxpf" />
+	<arg line="thirdparty/hadoop/${CURRENT_HADOOP}.tar.gz" />
+    </exec>
+    <echo message="Copying default Hadoop configuration to the conf directory." />
+    <move file="${CURRENT_HADOOP}" tofile="runtime" />
+    <copy todir="runtime/conf/">
+      <fileset dir="conf/" includes="*.xml" excludes="*hive*" />
+      <fileset dir="conf/" includes="*.sh" />
+    </copy>
+    
+  </target>
+
+  <target name="setup-hive">
+    <echo message="Extracting the current version of HIVE ${CURRENT_HIVE}" />
+    <exec dir="." executable="tar">
+       <arg line="-zxpf" />
+       <arg line="thirdparty/hive/${CURRENT_HIVE}.tar.gz" />
+    </exec>
+    <mkdir dir="runtime/hive" />
+    <move file="${CURRENT_HIVE}" tofile="runtime/hive" />
+    <copy file="conf/hive-site.xml" todir="runtime/hive/conf" />
+  </target>
+
+  <target depends="load-contrib" name="authorize-master-ssh-on-slave">
+    <exec executable="hostname" outputproperty="hostname.current"/>
+    <loadfile srcFile="conf/masters" property="hostname.master" />
+    <echo message="current: ${hostname.current} | master: ${hostname.master}" />
+    <echo message="Authorizing the Master access in the slave node ${hostname.current}" />
+    <loadfile property="master.ssh.key" srcFile="conf/master_sshkey.pub"/>
+    <echo file="${user.home}/.ssh/authorized_keys" append="true">${master.ssh.key}</echo>
+ </target>
+
+  <property name="HADOOP_HOME" value="runtime/" />
+  <target name="format">
+    <delete dir="datastore/" />
+    <mkdir dir="datastore/"/>
+    <exec dir="${HADOOP_HOME}/bin" executable="hadoop">
+        <arg line="namenode format"/>
+    </exec>
+  </target>
+
+  <target depends="load-contrib" name="update-master">
+     <echo message="Updating the master host..." />
+     <delete file="runtime/conf/slaves" />
+     <echo message="Creating new file 'runtime/conf/slaves'..." />
+     <for list="${slaves.list}" param="slaveHost" delimiter=",">
+      <sequential>
+        <echo file="runtime/conf/slaves" append="true">@{slaveHost}${line.separator}</echo>
+      </sequential>
+    </for>
+    <copy todir="runtime/conf/">
+      <fileset dir="conf/" includes="*.xml" excludes="*hive*"/>
+      <fileset dir="conf/" includes="*.sh" />
+    </copy>
+    <copy todir="runtime/hive/conf/">
+      <fileset dir="conf/" includes="hive-site.xml" />
+    </copy>
+
+  </target>
+
+  <target depends="load-contrib " name="update-slaves">
+    <echo message="Updating the slave hosts..." />
+    <for list="${slaves.list}" param="slaveHost" delimiter=",">
+      <sequential>
+        <echo>Updating slave host @{slaveHost}</echo>
+        <var name="var" value="@{slaveHost}" />
+	<scp todir="hadoop@${var}:/u1/hadoop/clusternet/runtime/conf" keyfile="${user.home}/.ssh/id_rsa" passphrase="">
+           <fileset dir="conf" includes="*.xml" excludes="*hive*" />
+           <fileset dir="conf/" includes="*.sh" />
+        </scp>
+      </sequential>
+    </for>
+  </target>
+
+  <target name="update-cluster">
+    <antcall target="update-master" />
+    <antcall target="update-slaves" />
+  </target>
+
+</project>

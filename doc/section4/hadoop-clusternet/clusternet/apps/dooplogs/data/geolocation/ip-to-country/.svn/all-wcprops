@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/49/trunk/clusternet/apps/dooplogs/data/geolocation/ip-to-country
+END
+GeoIPCountryCSV.zip
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/48/trunk/clusternet/apps/dooplogs/data/geolocation/ip-to-country/GeoIPCountryCSV.zip
+END
+tables-load-instructions.sql
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/49/trunk/clusternet/apps/dooplogs/data/geolocation/ip-to-country/tables-load-instructions.sql
+END
+find-country-by-ip.sql
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/48/trunk/clusternet/apps/dooplogs/data/geolocation/ip-to-country/find-country-by-ip.sql
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/49/trunk/clusternet/apps/dooplogs/data/geolocation
+END
+geolocation-working-mysql-dump.sql
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/49/trunk/clusternet/apps/dooplogs/data/geolocation/geolocation-working-mysql-dump.sql
+END
+GeoLiteCity_20101101.zip
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/26/trunk/clusternet/apps/dooplogs/data/geolocation/GeoLiteCity_20101101.zip
+END
+geolocation.hive.sql
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/26/trunk/clusternet/apps/dooplogs/data/geolocation/geolocation.hive.sql
+END
+geolocation-mapper.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/26/trunk/clusternet/apps/dooplogs/data/geolocation/geolocation-mapper.py
+END

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/5/trunk/lib/contrib/hdfsproxy/bin
+END
+hdfsproxy-daemon.sh
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/5/trunk/lib/contrib/hdfsproxy/bin/hdfsproxy-daemon.sh
+END
+stop-hdfsproxy.sh
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/5/trunk/lib/contrib/hdfsproxy/bin/stop-hdfsproxy.sh
+END
+hdfsproxy-config.sh
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/5/trunk/lib/contrib/hdfsproxy/bin/hdfsproxy-config.sh
+END
+hdfsproxy-daemons.sh
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/5/trunk/lib/contrib/hdfsproxy/bin/hdfsproxy-daemons.sh
+END
+hdfsproxy
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/5/trunk/lib/contrib/hdfsproxy/bin/hdfsproxy
+END
+hdfsproxy-slaves.sh
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/5/trunk/lib/contrib/hdfsproxy/bin/hdfsproxy-slaves.sh
+END
+start-hdfsproxy.sh
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/5/trunk/lib/contrib/hdfsproxy/bin/start-hdfsproxy.sh
+END

@@ -1,0 +1,46 @@
+10
+
+dir
+49
+http://hadoop-clusternet.googlecode.com/svn/trunk/clusternet/thirdparty
+http://hadoop-clusternet.googlecode.com/svn
+
+
+
+2010-11-10T09:08:20.706370Z
+21
+marcellodesales
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+e50cdf67-fb17-008b-0da4-94f41899ae6d
+
+hudson
+dir
+
+ant
+dir
+
+mysql
+dir
+
+data
+dir
+
+hadoop
+dir
+
+hive
+dir
+

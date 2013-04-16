@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+  <property>
+  	<name>mapred.job.tracker</name>
+  	<value>cu093:54311</value>
+ 	<description>The host and port that the MapReduce job tracker runs
+  		at.  If "local", then jobs are run in-process as a single map
+ 		 and reduce task.
+ 	</description>
+  </property>
+
+  <property>
+        <name>mapred.map.tasks</name>
+        <value>50</value>
+        <description>
+		As a rule of thumb, use 10x the number of slaves (i.e., number 
+		of tasktrackers).
+        </description>
+  </property>
+
+  <property>
+        <name>mapred.reduce.tasks</name>
+        <value>10</value>
+        <description>
+		As a rule of thumb, use 2x the number of slave processors 
+		(i.e., number of tasktrackers).
+        </description>
+  </property>
+
+  <property>
+        <name>mapred.local.dir</name>
+        <value>/u1/hadoop/clusternet/tmp</value>
+        <description>
+        	Determines where temporary MapReduce data is written. 
+		It also may be a list of directories.
+	</description>
+  </property>
+
+</configuration>

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/36/trunk/clusternet/apps/dooplogs/src/tfidf
+END
+WordFrequenceInDocument.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/36/trunk/clusternet/apps/dooplogs/src/tfidf/WordFrequenceInDocument.java
+END
+WordCountsInDocuments.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/36/trunk/clusternet/apps/dooplogs/src/tfidf/WordCountsInDocuments.java
+END
+WordsInCorpusTFIDF.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/36/trunk/clusternet/apps/dooplogs/src/tfidf/WordsInCorpusTFIDF.java
+END

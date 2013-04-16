@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/38/trunk/clusternet/apps/dooplogs/test/tfidf
+END
+WordInCorpusTFIDFMapperTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/38/trunk/clusternet/apps/dooplogs/test/tfidf/WordInCorpusTFIDFMapperTest.java
+END
+WordCountsForDocsReducerTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/38/trunk/clusternet/apps/dooplogs/test/tfidf/WordCountsForDocsReducerTest.java
+END
+WordFreqReducerTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/38/trunk/clusternet/apps/dooplogs/test/tfidf/WordFreqReducerTest.java
+END
+WordInCorpusTFIDFReducerTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/38/trunk/clusternet/apps/dooplogs/test/tfidf/WordInCorpusTFIDFReducerTest.java
+END
+BetterStringTokenizerTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/16/trunk/clusternet/apps/dooplogs/test/tfidf/BetterStringTokenizerTest.java
+END
+AllTests.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/16/trunk/clusternet/apps/dooplogs/test/tfidf/AllTests.java
+END
+WordCountsForDocsMapperTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/38/trunk/clusternet/apps/dooplogs/test/tfidf/WordCountsForDocsMapperTest.java
+END
+WordFreqMapperTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/38/trunk/clusternet/apps/dooplogs/test/tfidf/WordFreqMapperTest.java
+END

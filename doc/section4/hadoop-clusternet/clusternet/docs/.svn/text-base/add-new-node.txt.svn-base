@@ -1,0 +1,18 @@
+
+
+ 1. Set up Hudson
+ 2. Go to Hudson controller (running on hadoop master) and add new hudson node
+    -> Manage Hudson -> Manage nodes -> New Node
+    -> Add the name of the Hadoop Slave like "Hadoop_Cluster_Slave_cu064".
+    -> Add the values 1, 1 as the number of tasks, Enter "/u1/hudson" for the
+FS  directory.
+    -> Save it... The slave server shows as Disconnected.
+    -> Go to the server cu064, for instance, and do the following:
+       * Download the slave.jar to be executed in the slave: 
+            wget http://cu093.cloud.sp.collab.net:9797/jnlpJars/slave.jar
+       * Execute the slave as follows: 
+            sudo java -jar slave.jar -jnlpUrl http://cu093.cloud.sp.collab.net:9797/computer/Hadoop_Cluster_Slave_cu064/slave-agent.jnlp  &
+    -> Go to the Master and reload the list of Nodes, confirming the slave is
+connected.
+ 
+ 3. On the hudson master run the "Add node"

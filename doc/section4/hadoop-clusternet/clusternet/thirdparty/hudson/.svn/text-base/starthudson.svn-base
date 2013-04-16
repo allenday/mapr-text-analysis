@@ -1,0 +1,2 @@
+export HUDSON_HOME=/u1/hudson
+nohup java -jar hudson.war  --httpPort=9191  > hudson.log 2>&1

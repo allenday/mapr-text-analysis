@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/2/trunk/test/java/index
+END
+WordInCorpusTFIDFMapperTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/2/trunk/test/java/index/WordInCorpusTFIDFMapperTest.java
+END
+WordCountsForDocsReducerTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/2/trunk/test/java/index/WordCountsForDocsReducerTest.java
+END
+WordFreqReducerTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/2/trunk/test/java/index/WordFreqReducerTest.java
+END
+MapperTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/2/trunk/test/java/index/MapperTest.java
+END
+WordInCorpusTFIDFReducerTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/2/trunk/test/java/index/WordInCorpusTFIDFReducerTest.java
+END
+BetterStringTokenizerTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/2/trunk/test/java/index/BetterStringTokenizerTest.java
+END
+ReducerTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/2/trunk/test/java/index/ReducerTest.java
+END
+AllTests.java
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/2/trunk/test/java/index/AllTests.java
+END
+WordCountsForDocsMapperTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/2/trunk/test/java/index/WordCountsForDocsMapperTest.java
+END
+WordFreqMapperTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/2/trunk/test/java/index/WordFreqMapperTest.java
+END

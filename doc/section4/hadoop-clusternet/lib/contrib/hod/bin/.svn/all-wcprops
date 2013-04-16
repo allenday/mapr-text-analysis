@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/5/trunk/lib/contrib/hod/bin
+END
+hodcleanup
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/5/trunk/lib/contrib/hod/bin/hodcleanup
+END
+VERSION
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/5/trunk/lib/contrib/hod/bin/VERSION
+END
+checknodes
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/5/trunk/lib/contrib/hod/bin/checknodes
+END
+hodring
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/5/trunk/lib/contrib/hod/bin/hodring
+END
+hod
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/5/trunk/lib/contrib/hod/bin/hod
+END
+ringmaster
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/5/trunk/lib/contrib/hod/bin/ringmaster
+END
+verify-account
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/5/trunk/lib/contrib/hod/bin/verify-account
+END
