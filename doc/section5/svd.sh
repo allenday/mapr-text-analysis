@@ -8,5 +8,7 @@ mahout rowid -i vectors/tfidf-vectors/part-r-00000 -o matrix
 mahout svd -i vectors/tfidf-vectors/ -o svd-values -nr 21578 -nc 41807 -r 3
 mahout ssvd -i vectors/tfidf-vectors/ -o ssvd-values -k 3 --reduceTasks 2
 
-
+#https://cwiki.apache.org/MAHOUT/quick-tour-of-text-analysis-using-the-mahout-command-line.html
 mahout rowsimilarity -i matrix -o similarity -r 21578 --similarityClassname SIMILARITY_COSINE -m 10 -ess
+
+
