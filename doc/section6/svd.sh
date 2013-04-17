@@ -13,4 +13,6 @@ mahout ssvd -i vectors/tfidf-vectors/ -o ssvd-values -k 3 --reduceTasks 2
 mahout rowsimilarity -i matrix/matrix -o similarity -r 21578 --similarityClassname SIMILARITY_COSINE -m 10 -ess
 
 #check out the output
-mahout seqdumper -i similarity/part-r-00000
+mahout seqdumper -i similarity/part-r-00000 > top10.txt
+cat top10.txt | perl -ne 'm/Key: (\d+)/;$x=$1;@t=m/[\{,](\d+):/g;print $x,"\t",$_,"\n" foreach @t' > top10.pair
+cat top10.pair | head -1000 | perl ./gv.pl > top10.png
